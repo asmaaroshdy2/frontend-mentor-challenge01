@@ -1,0 +1,176 @@
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+main .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0 5px 25px hsl(234, 85%, 45%, 0.1);
+    border-radius: 25px;
+
+}
+.result{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image:linear-gradient( to bottom, hsl(252, 100%, 67%),  hsl(241, 81%, 54%) );
+    border-radius: 25px;
+}
+.title1{
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+}
+.result div{
+    width:170px ;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.result div p{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.result div .sp2{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+    opacity: 0.6;
+}
+
+.result div p .sp1{
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    opacity: 1;
+}
+.great{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+}
+.disc{
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    margin: 10px 20px 20px 20px;
+}
+.summry{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 250px;
+    border-radius: 0 25px 25px 0;
+}
+.summry h4{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.boxes div{
+    min-width: 250px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxes div .ap{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.bold{
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.light{
+    color: hsl(224, 30%, 27%);
+    opacity: 0.5;
+    font-weight: 700;
+}
+.summry .reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color:hsl(0, 100%, 67%) ;
+}
+.summry .memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+.summry .varbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+.summry .visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.summry .click{
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 25px;
+    background-color: hsl(224, 30%, 27%);
+    height: 50px;
+}
+.summry .click a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@media (max-width:600px){
+    main .content{
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .content .result{
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+    }
+    .content .summry{
+        width: 100%;
+    }
+    .boxes div{
+        width: 100%;
+    }
+}
